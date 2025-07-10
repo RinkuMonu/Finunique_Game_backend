@@ -11,11 +11,17 @@ connectDB();
 
 const app = express();
 
-app.use(cors({
-  origin: ["http://localhost:5173", "https://rummy-eight.vercel.app/"],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://rummy-eight.vercel.app/",
+      "https://finuniques.in/",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.get("/", (_, res) => {
   res.send("Your backend is liveeee ✅");
