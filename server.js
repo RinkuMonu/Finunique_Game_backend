@@ -24,7 +24,7 @@ app.use(
 );
 app.use(express.json());
 app.get("/", (_, res) => {
-  res.send("Your backend is liveeee ✅");
+  res.send("Your backend is liveeeeeeeeeeeeeee ✅");
 });
 
 app.use("/api/auth", authRoutes);
