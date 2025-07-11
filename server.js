@@ -15,9 +15,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://rummy-eight.vercel.app/",
-      "https://finuniques.in/",
+      "https://rummy-eight.vercel.app", 
+      "https://finuniques.in",
     ],
+
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
